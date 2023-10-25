@@ -1,0 +1,220 @@
+body{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+ line-height: 20px;
+ background: rgb(115,213,112);
+ background: linear-gradient(205deg, rgba(115,213,112,0.3379552504595589) 0%, rgba(0,255,134,1) 100%); 
+}
+
+header{
+    /* background: rgb(223,236,146);
+    background: linear-gradient(90deg, rgba(223,236,146,1) 0%, rgba(255,175,0,1) 100%); */
+    background: rgb(115,213,112);
+    background: linear-gradient(205deg, rgba(115,213,112,0.3379552504595589) 0%, rgba(0,255,134,1) 100%); 
+}
+
+header img {
+    border-radius: 70%;
+}
+
+header h2 {
+    color: grey;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    left: 20px;
+}
+
+main{
+    background: rgb(115,213,112);
+    background: linear-gradient(205deg, rgba(115,213,112,0.3379552504595589) 0%, rgba(0,255,134,1) 100%); 
+}
+
+nav{
+    /* background-color: bisque; */
+    background: rgb(122,213,112);
+    background: linear-gradient(205deg, rgba(122,213,112,0.3379552504595589) 100%, rgba(20,255,0,1) 100%);
+    height: 30px;
+    margin-bottom: 0px;
+    /* margin-bottom: 20px; */
+}
+
+nav div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav div ul li{
+    flex-grow: 1;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    color: gray;
+}
+
+nav div ul li a:hover{
+    background-color: greenyellow;
+}
+
+nav div ul li a.activo{
+    background-color: greenyellow;
+}
+
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.imagenInicio{
+    display: flex;
+    max-width: 100%;
+    height: 620px;
+    object-fit: cover;
+    
+}
+
+.textoInicio{
+    display: flex;
+    color: black;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+footer{
+    margin-top: 0px;
+    text-align: right;
+    vertical-align: middle;
+    background: rgb(122,213,112);
+    background: linear-gradient(205deg, rgba(122,213,112,0.3379552504595589) 100%, rgba(20,255,0,1) 100%);
+    height: 50px;
+}
+
+/* Comienzo de Tienda */
+.contenedor-tienda{
+    display: flex;
+    
+}
+
+.row-tienda{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-tienda{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    /* flex-basis: 100%; */
+    min-width: 0; 
+    max-width: 100%;
+    /* background-color: #fff; */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    margin-right: 3%;
+}
+
+.card-tienda-title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+.card-tienda-text {
+    margin-bottom: 0;
+}
+
+
+.img-tienda-responsive {
+    /* display: block; */
+    max-width: 100%;
+    height: 350px;
+}
+/* Fin de tienda */
+/* Inicio Reserva */
+
+.imagen-reserva{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border-radius: 1%; 
+}
+
+
+/* Fin Reserva */
+
+/* Inicio Contacto */
+.contacto{
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div{
+    width: 100%;
+    height: 650px;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 80px;
+    align-items: center;
+}
+
+.formulario p:nth-child(4){
+    align-items: start;
+}
+
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+}
+
+.formulario p input,
+.formulario p textarea{
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario p textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"]{
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover{
+    background-color: #2e64a1;
+}
+
+/* Fin Contacto */
